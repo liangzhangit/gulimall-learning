@@ -1,33 +1,31 @@
 package io.niceseason.gulimall.product;
 
-import com.aliyun.oss.OSS;
-import com.aliyun.oss.OSSClient;
-import com.aliyun.oss.OSSClientBuilder;
-import com.aliyun.oss.model.PutObjectRequest;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import io.niceseason.gulimall.product.dao.ProductAttrValueDao;
-import io.niceseason.gulimall.product.dao.SkuSaleAttrValueDao;
-import io.niceseason.gulimall.product.entity.BrandEntity;
-import io.niceseason.gulimall.product.service.BrandService;
-import io.niceseason.gulimall.product.vo.SkuItemSaleAttrVo;
-import io.niceseason.gulimall.product.vo.SpuItemAttrGroupVo;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.redisson.api.RedissonClient;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.data.redis.core.ValueOperations;
-import org.springframework.test.context.junit4.SpringRunner;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.List;
 import java.util.concurrent.ThreadPoolExecutor;
 
+import org.junit.jupiter.api.Test;
+import org.redisson.api.RedissonClient;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
+
+import com.aliyun.oss.OSS;
+import com.aliyun.oss.OSSClient;
+import com.aliyun.oss.OSSClientBuilder;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+
+import io.niceseason.gulimall.product.dao.ProductAttrValueDao;
+import io.niceseason.gulimall.product.dao.SkuSaleAttrValueDao;
+import io.niceseason.gulimall.product.entity.BrandEntity;
+import io.niceseason.gulimall.product.service.BrandService;
+import io.niceseason.gulimall.product.vo.SkuItemSaleAttrVo;
+import io.niceseason.gulimall.product.vo.SpuItemAttrGroupVo;
+
 @SpringBootTest
-@RunWith(SpringRunner.class)
 public class GulimallProductApplicationTests {
     @Autowired
     private BrandService brandService;

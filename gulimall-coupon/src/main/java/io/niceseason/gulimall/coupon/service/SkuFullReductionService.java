@@ -1,11 +1,12 @@
 package io.niceseason.gulimall.coupon.service;
 
+import java.util.Map;
+
 import com.baomidou.mybatisplus.extension.service.IService;
+
 import io.niceseason.common.to.SkuReductionTo;
 import io.niceseason.common.utils.PageUtils;
 import io.niceseason.gulimall.coupon.entity.SkuFullReductionEntity;
-
-import java.util.Map;
 
 /**
  * 商品满减信息

@@ -8,8 +8,9 @@
 
 package io.niceseason.common.xss;
 
-import io.niceseason.common.exception.RRException;
 import org.apache.commons.lang.StringUtils;
+
+import io.niceseason.common.exception.RRException;
 
 /**
  * SQL过滤

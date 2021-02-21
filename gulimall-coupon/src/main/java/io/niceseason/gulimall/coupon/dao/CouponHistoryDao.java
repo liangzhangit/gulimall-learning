@@ -1,8 +1,10 @@
 package io.niceseason.gulimall.coupon.dao;
 
-import io.niceseason.gulimall.coupon.entity.CouponHistoryEntity;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
+import io.niceseason.gulimall.coupon.entity.CouponHistoryEntity;
 
 /**
  * 优惠券领取历史记录

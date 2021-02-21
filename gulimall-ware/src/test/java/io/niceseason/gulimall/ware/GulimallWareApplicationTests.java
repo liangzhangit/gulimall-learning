@@ -2,7 +2,8 @@ package io.niceseason.gulimall.ware;
 
 import io.niceseason.gulimall.ware.entity.WareInfoEntity;
 import io.niceseason.gulimall.ware.service.WareInfoService;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 

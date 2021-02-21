@@ -3,18 +3,20 @@ package io.niceseason.gulimall.coupon.controller;
 import java.util.Arrays;
 import java.util.Map;
 
-import io.niceseason.common.to.SkuReductionTo;
-import io.niceseason.gulimall.coupon.entity.SkuLadderEntity;
-import io.niceseason.gulimall.coupon.service.SkuLadderService;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
-import io.niceseason.gulimall.coupon.entity.SkuFullReductionEntity;
-import io.niceseason.gulimall.coupon.service.SkuFullReductionService;
+import io.niceseason.common.to.SkuReductionTo;
 import io.niceseason.common.utils.PageUtils;
 import io.niceseason.common.utils.R;
+import io.niceseason.gulimall.coupon.entity.SkuFullReductionEntity;
+import io.niceseason.gulimall.coupon.service.SkuFullReductionService;
+import io.niceseason.gulimall.coupon.service.SkuLadderService;
 
 
 

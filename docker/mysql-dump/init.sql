@@ -1,0 +1,1 @@
+CREATE USER 'dbUser'@'%' IDENTIFIED BY 'dbPassword'; GRANT ALL PRIVILEGES ON *.* TO 'dbUser'@'%' WITH GRANT OPTION; system mysql --user=dbUser --password=dbPassword -e 'CREATE DATABASE IF NOT EXISTS dgy_cloud_test'; system mysql --user=dbUser --password=dbPassword -e 'CREATE DATABASE IF NOT EXISTS dgy_org_test'; 

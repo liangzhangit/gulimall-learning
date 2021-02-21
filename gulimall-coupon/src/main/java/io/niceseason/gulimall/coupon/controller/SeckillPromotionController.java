@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.niceseason.gulimall.coupon.entity.SeckillPromotionEntity;
-import io.niceseason.gulimall.coupon.service.SeckillPromotionService;
 import io.niceseason.common.utils.PageUtils;
 import io.niceseason.common.utils.R;
+import io.niceseason.gulimall.coupon.entity.SeckillPromotionEntity;
+import io.niceseason.gulimall.coupon.service.SeckillPromotionService;
 
 
 

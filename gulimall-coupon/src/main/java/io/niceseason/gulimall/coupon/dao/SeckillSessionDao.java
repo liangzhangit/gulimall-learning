@@ -1,8 +1,10 @@
 package io.niceseason.gulimall.coupon.dao;
 
-import io.niceseason.gulimall.coupon.entity.SeckillSessionEntity;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
+import io.niceseason.gulimall.coupon.entity.SeckillSessionEntity;
 
 /**
  * 秒杀活动场次
